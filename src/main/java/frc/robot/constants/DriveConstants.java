@@ -9,8 +9,6 @@ public final class DriveConstants {
     }
 
     // Physical properties
-    public static final double TRACK_WIDTH = Units.inchesToMeters(18.5);
-    public static final double TRACK_LENGTH = Units.inchesToMeters(18.5);
     public static final double ROBOT_WIDTH = Units.inchesToMeters(25 + 3.25 * 2);
     public static final double ROBOT_LENGTH = Units.inchesToMeters(25 + 3.25 * 2);
     public static final double MAX_LINEAR_SPEED = Units.feetToMeters(15.5);
@@ -25,10 +23,10 @@ public final class DriveConstants {
     public static final double STEER_RAD_PER_PULSE = 2 * Math.PI / 1024;
 
     public enum ModuleConstants {
-        FrontLeft(1, 0, 0, 1, 1, 2, 3, 0, new Translation2d(TRACK_LENGTH / 2, TRACK_WIDTH / 2)),
-        FrontRight(2, 2, 4, 5, 3, 6, 7, 0, new Translation2d(TRACK_LENGTH / 2, -TRACK_WIDTH / 2)),
-        BackLeft(3, 4, 8, 9, 5, 10, 11, 0, new Translation2d(-TRACK_LENGTH / 2, TRACK_WIDTH / 2)),
-        BackRight(4, 6, 12, 13, 7, 14, 15, 0, new Translation2d(-TRACK_LENGTH / 2, -TRACK_WIDTH / 2));
+        FrontLeft(1, 0, 0, 1, 1, 2, 3, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[0]),
+        FrontRight(2, 2, 4, 5, 3, 6, 7, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[1]),
+        BackLeft(3, 4, 8, 9, 5, 10, 11, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[2]),
+        BackRight(4, 6, 12, 13, 7, 14, 15, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[3]);
 
         public final int moduleNum;
         public final int driveMotorID;

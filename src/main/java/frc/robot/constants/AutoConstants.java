@@ -1,12 +1,5 @@
 package frc.robot.constants;
 
-import java.io.IOException;
-import java.util.Optional;
-
-import org.json.simple.parser.ParseException;
-
-import com.pathplanner.lib.config.RobotConfig;
-
 import edu.wpi.first.math.trajectory.TrapezoidProfile;
 
 public final class AutoConstants {
@@ -27,14 +20,9 @@ public final class AutoConstants {
             MAX_ANGULAR_SPEED_RADIANS_PER_SECOND,
             MAX_ANGULAR_SPEED_RADIANS_PER_SECOND_SQUARED);
 
-    public static final Optional<RobotConfig> ROBOT_CONFIG = loadRobotConfig();
+//     public static final RobotConfig ROBOT_CONFIG = loadRobotConfig();
 
-    public static Optional<RobotConfig> loadRobotConfig() {
-        try {
-            return Optional.of(RobotConfig.fromGUISettings());
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
-        }
-        return Optional.empty();
-    }
+//     public static RobotConfig loadRobotConfig() {
+//         return RobotConfig.fromGUISettings();
+//     }
 }

@@ -25,10 +25,10 @@ public final class DriveConstants {
     public static final double STEER_RAD_PER_PULSE = 2 * Math.PI / 1024;
 
     public enum ModuleConstants {
-        FrontLeft(1, 0, 0, 1, 1, 2, 3, 0, new Translation2d(TRACK_LENGTH / 2, TRACK_WIDTH / 2)),
-        FrontRight(2, 2, 4, 5, 3, 6, 7, 0, new Translation2d(TRACK_LENGTH / 2, -TRACK_WIDTH / 2)),
-        BackLeft(3, 4, 8, 9, 5, 10, 11, 0, new Translation2d(-TRACK_LENGTH / 2, TRACK_WIDTH / 2)),
-        BackRight(4, 6, 12, 13, 7, 14, 15, 0, new Translation2d(-TRACK_LENGTH / 2, -TRACK_WIDTH / 2));
+        FrontLeft(1, 0, 0, 1, 1, 2, 3, 0, new Translation2d(ROBOT_WIDTH / 2, ROBOT_LENGTH / 2)),
+        FrontRight(2, 2, 4, 5, 3, 6, 7, 0, new Translation2d(ROBOT_WIDTH / 2, -ROBOT_LENGTH / 2)),
+        BackLeft(3, 4, 8, 9, 5, 10, 11, 0, new Translation2d(-ROBOT_WIDTH / 2, ROBOT_LENGTH / 2)),
+        BackRight(4, 6, 12, 13, 7, 14, 15, 0, new Translation2d(-ROBOT_WIDTH / 2, -ROBOT_LENGTH / 2));
 
         public final int moduleNum;
         public final int driveMotorID;

@@ -25,4 +25,5 @@ public final class AutoConstants {
 //     public static RobotConfig loadRobotConfig() {
 //         return RobotConfig.fromGUISettings();
 //     }
+        // new RobotConfig(74.088, 6.883, new ModuleConfig())
 }

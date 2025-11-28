@@ -30,10 +30,10 @@ public final class SwerveDrive extends SubsystemBase {
     // Construct the swerve modules with their respective constants.
     // The SwerveModule class will handle all the details of controlling the modules.
     private final SwerveModule[] swerveMods = {
-        new SwerveModule(ModuleConstants.FrontLeft),
-        new SwerveModule(ModuleConstants.FrontRight),
-        new SwerveModule(ModuleConstants.BackLeft),
-        new SwerveModule(ModuleConstants.BackRight)
+        new SwerveModule(ModuleConstants.FRONT_LEFT),
+        new SwerveModule(ModuleConstants.FRONT_RIGHT),
+        new SwerveModule(ModuleConstants.BACK_LEFT),
+        new SwerveModule(ModuleConstants.BACK_RIGHT)
     };
 
     // The kinematics for translating between robot chassis speeds and module states.

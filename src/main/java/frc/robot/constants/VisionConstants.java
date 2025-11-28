@@ -30,7 +30,6 @@ public final class VisionConstants {
             .setAvgLatencyMs(0)
             .setLatencyStdDevMs(0);
 
-    // The layout of the AprilTags on the field
     public static final AprilTagFieldLayout TAG_LAYOUT = AprilTagFieldLayout.loadField(AprilTagFields.kDefaultField);
 
     // The standard deviations of our vision estimated poses, which affect

@@ -55,7 +55,7 @@ public class GamepieceLauncher extends SubsystemBase {
     public void simulationPeriodic() {
         launcherSim.setInputVoltage(curMotorCmd * RobotController.getBatteryVoltage());
         launcherSim.update(0.02);
-        var spd = launcherSim.getAngularVelocityRPM();
+        double spd = launcherSim.getAngularVelocityRPM();
         SmartDashboard.putNumber("GPLauncher Act Spd (RPM)", spd);
     }
 }

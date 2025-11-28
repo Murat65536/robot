@@ -26,7 +26,7 @@ import frc.robot.constants.VisionConstants;
 public class Vision extends SubsystemBase {
     private final PhotonCamera camera = new PhotonCamera(VisionConstants.CAMERA_NAME);
     private final PhotonPoseEstimator photonEstimator = new PhotonPoseEstimator(VisionConstants.TAG_LAYOUT,
-            PoseStrategy.MULTI_TAG_PNP_ON_COPROCESSOR, VisionConstants.ROBOT_TO_CAM);;
+            PoseStrategy.MULTI_TAG_PNP_ON_COPROCESSOR, VisionConstants.ROBOT_TO_CAM);
     private Matrix<N3, N1> curStdDevs;
     private final EstimateConsumer estConsumer;
     private final Supplier<Pose2d> poseSupplier;
@@ -163,6 +163,9 @@ public class Vision extends SubsystemBase {
 
     @Override
     public void simulationPeriodic() {
+        // Field2d debugField = getSimDebugField();
+        // debugField.getObject("EstimatedRobot").setPose(drivetrain.getPose());
+        // debugField.getObject("EstimatedRobotModules").setPoses(drivetrain.getModulePoses());
         visionSim.update(poseSupplier.get());
     }
 

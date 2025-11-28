@@ -23,10 +23,10 @@ public final class DriveConstants {
     public static final double STEER_RAD_PER_PULSE = 2 * Math.PI / 1024;
 
     public enum ModuleConstants {
-        FrontLeft(1, 0, 0, 1, 1, 2, 3, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[0]),
-        FrontRight(2, 2, 4, 5, 3, 6, 7, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[1]),
-        BackLeft(3, 4, 8, 9, 5, 10, 11, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[2]),
-        BackRight(4, 6, 12, 13, 7, 14, 15, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[3]);
+        FRONT_LEFT(1, 0, 0, 1, 1, 2, 3, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[0]),
+        FRONT_RIGHT(2, 2, 4, 5, 3, 6, 7, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[1]),
+        BACK_LEFT(3, 4, 8, 9, 5, 10, 11, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[2]),
+        BACK_RIGHT(4, 6, 12, 13, 7, 14, 15, 0, AutoConstants.ROBOT_CONFIG.moduleLocations[3]);
 
         public final int moduleNum;
         public final int driveMotorID;
